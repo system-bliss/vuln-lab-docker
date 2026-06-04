@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Docker lab artifacts
+**/db/
+**/data/
+**/uploads/
+**/librenms/
+**/.env
+docker-compose.override.yml
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Local tooling
+.claude/
+.codex/
+.codegraph/
+.playwright-mcp/
+.qoder/
+.reasonix/
+
+# Temp files
+*.tmp
+*~
+*.log
