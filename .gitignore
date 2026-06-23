@@ -24,7 +24,10 @@ Thumbs.db
 
 # Local tooling
 .claude/
-.codex/
+.codex/*
+!.codex/skills/
+!.codex/skills/**/
+!.codex/skills/**
 .codegraph/
 .playwright-mcp/
 .qoder/

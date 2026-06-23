@@ -8,18 +8,33 @@
 
 | 靶场 | 产品/组件 | 真实性状态 | 默认端口 |
 | --- | --- | --- | --- |
-| `CVE-2026-0920-lab` | WordPress LA-Studio Element Kit | 真实 WordPress 插件 `1.5.6.3` | `8103` |
-| `CVE-2026-11462-lab` | BeikeShop | 真实源码骨架 `v1.6.0.22` | `8110` |
-| `CVE-2026-22557-lab` | UniFi Network Application | 真实镜像 `10.1.85` | `8101` |
-| `CVE-2026-26988-lab` | LibreNMS | 真实镜像 `25.12.0` | `8000` |
-| `CVE-2026-27180-lab` | MajorDoMo | 真实源码 ref `41086aaa` | `8899` |
-| `CVE-2026-29000-lab` | pac4j-jwt | 真实依赖骨架 `6.3.2` | `8104` |
-| `CVE-2026-44262-lab` | dedoc/scramble | 真实依赖骨架 `0.13.21` | `8106` |
-| `CVE-2026-45347-lab` | Open WebUI | 真实镜像 `v0.5.10` | `8105` |
-| `CVE-2026-4631-lab` | Cockpit | lab patch 辅助的真实组件 | `9090`, `2222` |
-| `CVE-2026-49443-lab` | authentik | 真实镜像 `2026.2.3` | `8107` |
+| [`CVE-2025-46817-lab`](./CVE-2025-46817-lab/) | Redis | `real-component`，镜像 `8.2.1` | `8132` |
+| [`CVE-2025-67419-lab`](./CVE-2025-67419-lab/) | EverShop | `real-component`，源码 `v2.1.0` | `8134` |
+| [`CVE-2026-0920-lab`](./CVE-2026-0920-lab/) | WordPress + LA-Studio Element Kit | `real-component`，插件 `1.5.6.3` | `8103` |
+| [`CVE-2026-11462-lab`](./CVE-2026-11462-lab/) | BeikeShop | `real-source-skeleton`，源码 tag `v1.6.0.22` | `8110` |
+| [`CVE-2026-2005-lab`](./CVE-2026-2005-lab/) | PostgreSQL pgcrypto | `real-component`，源码 `16.11` | `8133` |
+| [`CVE-2026-2058-lab`](./CVE-2026-2058-lab/) | CloudClassroom-PHP-Project | `real-component`，源码 commit `5dadec098` | `8126` |
+| [`CVE-2026-22557-lab`](./CVE-2026-22557-lab/) | UniFi Network Application | `real-component`，镜像 `10.1.85` | `8101`，inform `8080` |
+| [`CVE-2026-24061-lab`](./CVE-2026-24061-lab/) | GNU Inetutils telnetd | `real-component`，源码 `2.6` | `8128` |
+| [`CVE-2026-26988-lab`](./CVE-2026-26988-lab/) | LibreNMS | `real-component`，镜像 `25.12.0` | `8000` |
+| [`CVE-2026-27180-lab`](./CVE-2026-27180-lab/) | MajorDoMo | `real-component`，源码 ref `41086aaa` | `8899` |
+| [`CVE-2026-29000-lab`](./CVE-2026-29000-lab/) | pac4j-jwt | `real-dependency-skeleton`，Maven 依赖 `6.3.2` | `8104` |
+| [`CVE-2026-29053-lab`](./CVE-2026-29053-lab/) | Ghost | `real-component`，镜像 `6.19.0` | `8132` |
+| [`CVE-2026-32604-lab`](./CVE-2026-32604-lab/) | Spinnaker Clouddriver | `real-component`，镜像 `2026.0.0-ubuntu` | `8121` |
+| [`CVE-2026-35031-lab`](./CVE-2026-35031-lab/) | Jellyfin | `real-component`，镜像 `10.10.3` | `8112` |
+| [`CVE-2026-3891-lab`](./CVE-2026-3891-lab/) | WordPress + WooCommerce + Pix for WooCommerce | `real-component`，插件 `1.5.0` | `8111` |
+| [`CVE-2026-3960-lab`](./CVE-2026-3960-lab/) | H2O-3 | `real-component`，版本 `3.46.0.9` | `8122`，callback `8123` |
+| [`CVE-2026-42879-lab`](./CVE-2026-42879-lab/) | FacturaScripts | `real-component`，版本 `2025.81` | `8114` |
+| [`CVE-2026-44262-lab`](./CVE-2026-44262-lab/) | dedoc/scramble | `real-dependency-skeleton`，Composer 包 `0.13.21` | `8106` |
+| [`CVE-2026-45347-lab`](./CVE-2026-45347-lab/) | Open WebUI | `real-component`，镜像 `v0.5.10` | `8105` |
+| [`CVE-2026-4631-lab`](./CVE-2026-4631-lab/) | Cockpit + OpenSSH | `lab-assisted-real-component`，Cockpit `356.2` + OpenSSH `8.7p1` | `9090`，SSH `2222` |
+| [`CVE-2026-4781-lab`](./CVE-2026-4781-lab/) | Sales and Inventory System | `real-component`，SourceCodester 应用包 | `8127` |
+| [`CVE-2026-49261-lab`](./CVE-2026-49261-lab/) | MariaDB Galera | `real-component`，镜像 `11.4.11` | `8131` |
+| [`CVE-2026-49443-lab`](./CVE-2026-49443-lab/) | authentik | `real-component`，镜像 `2026.2.3` | `8107` |
+| [`CVE-2026-5027-lab`](./CVE-2026-5027-lab/) | Langflow | `real-component`，镜像 `1.8.4` | `8120` |
+| [`CVE-2026-6815-lab`](./CVE-2026-6815-lab/) | Casdoor | `real-component`，镜像 `2.328.0` | `8113` |
 
-完整真实性说明见 `REALITY.md`。本仓库不再把轻量 mock 当成真实 CVE 靶场；如果某个目录是源码/依赖骨架，README 会明确说明当前可验证范围和完整复现还需要补齐的业务流程。
+完整真实性说明见 [`REALITY.md`](./REALITY.md)。本仓库不把轻量 mock 当成真实 CVE 靶场；如果某个目录是源码/依赖骨架，README 必须明确说明当前可验证范围，以及完整业务流复现还需要补齐的前置条件。
 
 ## 环境说明
 
@@ -71,7 +86,7 @@ LAB_PORT=9001 docker compose up -d --build
 - 在浏览器中访问靶场，将请求发送到 Burp Proxy。
 - 把关键请求发送到 Repeater。
 - 按对应 README 修改路径、参数、Header、Cookie 或请求体。
-- 观察响应内容、响应时间、服务日志或内部回连记录判断漏洞是否触发。
+- 观察响应内容、响应时间、服务日志、证明文件或内部回连记录判断漏洞是否触发。
 
 ## 常用排错
 
@@ -116,4 +131,6 @@ docker compose up -d --build
 
 ## 文档质量约定
 
-仓库内每个靶场 README 均应使用中文说明，并以 Burp Suite / Repeater 作为主要复现或验证方式。仅当复现链路必须由服务端脚本托管升级包、feed、回连监听等内容时，才保留对应辅助脚本；纯自动化验证脚本不作为必需文件保留。对于真实源码骨架和真实依赖骨架，文档必须明确说明当前只验证真实组件/依赖存在，不伪造漏洞利用成功结果。
+仓库内每个靶场 README 均应使用中文说明，并以 Burp Suite / Repeater 作为主要复现或验证方式。README 至少应包含 CVE ID、受影响组件与版本、复现范围、启动命令、目标地址、关键 HTTP 请求、阳性/阴性判断、排错、清理和参考链接。
+
+仅当复现链路必须由服务端脚本托管升级包、feed、回连监听等内容时，才保留对应辅助脚本；纯自动化验证脚本不作为必需文件保留。对于真实源码骨架和真实依赖骨架，文档必须明确说明当前只验证真实组件/依赖存在，不伪造漏洞利用成功结果。
